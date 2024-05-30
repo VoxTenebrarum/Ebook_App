@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        tools:context=".ReadActivity">
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:elevation="10dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/back_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter One"
+            android:textSize="28sp"
+            android:fontFamily="@font/playfairdisplay_medium"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/chapterText"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:layout_height="wrap_content"
+            android:text="Laurelai was lost to the world, almost as soon as the contractions started in earnest. The succubus’s magic turned those agonizing moments into orgasms almost instantly, and the angel was a babbling an incoherent mess as she drifted on a sea of ecstasy. This wasn’t the way that childbirth was supposed to happen. She understood that, but then she was never supposed to have a child. She was supposed to be an incorruptible instrument of the divine, and instead she was about to become a mother. Even with all the depravity and pleasure she’d endured up until this point, these inverted sensations were an order of magnitude more extreme, and they kept her from properly considering the implications of what was happening to her.
+
+\n\nOnly the goddess and mortal women should have been capable of such a miracle, and yet because of the dark sorceries that the demons had woven into her formally male body, she was panting and gasping as new life prepared to force itself out of her body. She was helpless, and both she and her unborn child were completely in the succubus’s care now. Fortunately, that care came with conditions. Lilliamma would give the angel and her child undying loyalty for the next 48 hours, and then Laurelai would let the demoness feast on the lust of the followers to her heart's content for the rest of the week while they both decided what came next. She couldn’t kill them of course, but Liliamma hadn’t complained too much about that.
+
+\n\n“I only kill my partners by accident,” she purred, Stroking Laurelai’s pregnant belly. “And I’m anxious to see just what will happen to you next. First you escape Lord Bel, then from hell itself, and now you find yourself amongst holy men and women. This is more entertainment than I’ve had in decades my pet.”
+
+\n\nAll that was in the past now. The demoness was handling the birth of her child, and all she had to endure the tidal waves of ecstasy that threatened to swamp her soul and drive her mad.
+"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+</ScrollView>

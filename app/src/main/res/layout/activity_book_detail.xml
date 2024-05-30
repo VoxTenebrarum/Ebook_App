@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/footerView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".BookDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:background="#ebf0ed">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="330dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rating_background"
+                android:elevation="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_star_yellow" />
+
+                <!-- Рейтинг книги -->
+                <TextView
+                    android:id="@+id/bookRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="4.5"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="44dp"
+                android:elevation="10dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/bookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="155dp"
+                android:fontFamily="@font/playfairdisplay_medium"
+                android:text="One Dark Window"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Racher Gilig"
+                android:textAlignment="center"
+                android:textColor="#686868"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/bookImage"
+                    android:layout_width="152dp"
+                    android:layout_height="240dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/angelfall" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="295dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="192dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:background="@drawable/genre_detail_background"
+            >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/genreRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        tools:listitem="@layout/item_genre_book_detail" />
+
+        </LinearLayout>
+</FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/playfairdisplay_semibold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="12dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp"
+        android:text="Elspeth needs a monster. The monster might be her. Elspeth Spindle needs more than luck to stay safe in the eerie, mist-locked kingdom of Blunder—she needs a monster. She calls him the Nightmare, an ancient, mercurial spirit trapped in her head. He protects her. He keeps her secrets.
+
+\n\nBut nothing comes for free, especially magic. When Elspeth meets a mysterious highwayman on the forest road, her life takes a drastic turn. Thrust into a world of shadow and deception, she joins a dangerous quest to cure Blunder from the dark magic infecting it. And the highwayman? He just so happens to be the King’s nephew, Captain of the most dangerous men in Blunder…and guilty of high treason.
+
+\n\nTogether they must gather twelve Providence Cards—the keys to the cure. But as the stakes heighten and their undeniable attraction intensifies, Elspeth is forced to face her darkest secret yet: the Nightmare is slowly taking over her mind. And she might not be able to stop him."
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginHorizontal="20dp" />
+</LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/favoriteButton"
+            android:padding="14dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="24dp"
+            android:elevation="10dp"
+            android:background="@drawable/favorite_background"
+            android:src="@drawable/favorite_icon" />
+
+        <!-- Ваша кнопка -->
+        <TextView
+            android:id="@+id/readButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/read_button_bg"
+            android:text="Read now"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_semibold"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
